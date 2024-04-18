@@ -1,0 +1,14 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_mac1.v,1713300576,verilog,,,,test_mac1,,,,,,,,
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_mult.v,1712796762,verilog,,,,test_mult,,,,,,,,
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_mult2.v,1713290674,verilog,,,,test_mult2,,,,,,,,
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/adder.v,1713291570,verilog,,C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/adder17.v,,adder,,,,,,,,
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/adder17.v,1713296726,verilog,,C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/adder18.v,,adder17,,,,,,,,
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/adder18.v,1713296726,verilog,,C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/adder19.v,,adder18,,,,,,,,
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/adder19.v,1713296726,verilog,,C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/mac1.v,,adder19,,,,,,,,
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/mac1.v,1713301935,verilog,,C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/mult.v,,mac1,,,,,,,,
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/mult.v,1712797112,verilog,,C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_mac1.v,,mult,,,,,,,,
