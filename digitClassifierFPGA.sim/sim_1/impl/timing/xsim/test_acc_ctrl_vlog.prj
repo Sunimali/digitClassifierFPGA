@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"test_acc_ctrl_time_impl.v" \
+"../../../../../digitClassifierFPGA.srcs/sim_1/new/test_acc_ctrl.v" \
+
+# Do not sort compile order
+nosort

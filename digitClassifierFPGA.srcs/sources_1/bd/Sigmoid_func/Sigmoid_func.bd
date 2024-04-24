@@ -1,0 +1,99 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF8B8059BF8B8059B",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../digitClassifierFPGA.gen/sources_1/bd/Sigmoid_func",
+      "name": "Sigmoid_func",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "sigmoid_0": "",
+      "sigmoid_interface_0": ""
+    },
+    "ports": {
+      "y": {
+        "direction": "I",
+        "left": "21",
+        "right": "0"
+      },
+      "data": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "sigmoid_0": {
+        "vlnv": "siu.edu:user:sigmoid:1.0",
+        "xci_name": "Sigmoid_func_sigmoid_0_0",
+        "xci_path": "ip\\Sigmoid_func_sigmoid_0_0\\Sigmoid_func_sigmoid_0_0.xci",
+        "inst_hier_path": "sigmoid_0"
+      },
+      "sigmoid_interface_0": {
+        "vlnv": "xilinx.com:module_ref:sigmoid_interface:1.0",
+        "xci_name": "Sigmoid_func_sigmoid_interface_0_0",
+        "xci_path": "ip\\Sigmoid_func_sigmoid_interface_0_0\\Sigmoid_func_sigmoid_interface_0_0.xci",
+        "inst_hier_path": "sigmoid_interface_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sigmoid_interface",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "y": {
+            "direction": "I",
+            "left": "21",
+            "right": "0"
+          },
+          "sign": {
+            "direction": "O"
+          },
+          "ovf": {
+            "direction": "O"
+          },
+          "addr": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "sigmoid_0_data": {
+        "ports": [
+          "sigmoid_0/data",
+          "data"
+        ]
+      },
+      "sigmoid_interface_0_addr": {
+        "ports": [
+          "sigmoid_interface_0/addr",
+          "sigmoid_0/addr"
+        ]
+      },
+      "sigmoid_interface_0_ovf": {
+        "ports": [
+          "sigmoid_interface_0/ovf",
+          "sigmoid_0/ovf"
+        ]
+      },
+      "sigmoid_interface_0_sign": {
+        "ports": [
+          "sigmoid_interface_0/sign",
+          "sigmoid_0/sign"
+        ]
+      },
+      "y_0_1": {
+        "ports": [
+          "y",
+          "sigmoid_interface_0/y"
+        ]
+      }
+    }
+  }
+}

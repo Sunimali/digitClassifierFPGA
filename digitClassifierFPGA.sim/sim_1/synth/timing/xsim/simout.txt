@@ -1,5 +1,10 @@
- 0: a=xx, b = xx, p = xxxx
- 1: a=07, b = 01, p = 0007
- 2: a=fb, b = 03, p = fff1
- 3: a=11, b = f1, p = ff01
- 4: a=20, b = 20, p = 0400
+3fc153
+3ff80b
+3ff91b
+3ff6a3
+3fdef3
+3ff1d3
+3fed43
+3fe3db
+3ff93b
+0023db

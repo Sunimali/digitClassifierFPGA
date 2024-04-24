@@ -1,0 +1,178 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF0C58273F1B889EA",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../digitClassifierFPGA.gen/sources_1/bd/acc_mac3",
+      "name": "acc_mac3",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "mac3_0": "",
+      "acc_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "pixels": {
+        "direction": "I",
+        "left": "127",
+        "right": "0"
+      },
+      "weights": {
+        "direction": "I",
+        "left": "127",
+        "right": "0"
+      },
+      "b": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "dout": {
+        "direction": "O",
+        "left": "21",
+        "right": "0"
+      }
+    },
+    "components": {
+      "mac3_0": {
+        "vlnv": "xilinx.com:module_ref:mac3:1.0",
+        "xci_name": "acc_mac3_mac3_0_0",
+        "xci_path": "ip\\acc_mac3_mac3_0_0\\acc_mac3_mac3_0_0.xci",
+        "inst_hier_path": "mac3_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mac3",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "pixelsIN": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          },
+          "weightsIN": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          },
+          "sumOUT": {
+            "direction": "O",
+            "left": "19",
+            "right": "0"
+          }
+        }
+      },
+      "acc_0": {
+        "vlnv": "xilinx.com:module_ref:acc:1.0",
+        "xci_name": "acc_mac3_acc_0_0",
+        "xci_path": "ip\\acc_mac3_acc_0_0\\acc_mac3_acc_0_0.xci",
+        "inst_hier_path": "acc_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "acc",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "din": {
+            "direction": "I",
+            "left": "19",
+            "right": "0"
+          },
+          "b": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "21",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "acc_0_dout": {
+        "ports": [
+          "acc_0/dout",
+          "dout"
+        ]
+      },
+      "b_0_1": {
+        "ports": [
+          "b",
+          "acc_0/b"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "mac3_0/clk",
+          "acc_0/clk"
+        ]
+      },
+      "pixelsIN_0_1": {
+        "ports": [
+          "pixels",
+          "mac3_0/pixelsIN"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst",
+          "acc_0/rst"
+        ]
+      },
+      "sumOUT": {
+        "ports": [
+          "mac3_0/sumOUT",
+          "acc_0/din"
+        ]
+      },
+      "weightsIN_0_1": {
+        "ports": [
+          "weights",
+          "mac3_0/weightsIN"
+        ]
+      }
+    }
+  }
+}

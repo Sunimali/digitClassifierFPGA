@@ -1,5 +1,5 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.sim/sim_1/impl/timing/xsim/test_mult2_time_impl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.sim/sim_1/impl/timing/xsim/test_acc_ctrl_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module acc_ctrl
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_mult2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module test_mult2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_acc_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_acc_ctrl

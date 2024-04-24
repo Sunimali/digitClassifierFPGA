@@ -33,7 +33,7 @@ module mac1(
 
     genvar i;
     generate
-        for(i=0; i<15; i=i+1) begin
+        for(i=0; i<=15; i=i+1) begin
             mult multmac(
                 .a(pixels[127 - 8*i : 127 - 8*i - 7]),
                 .b(weights[127 - 8*i : 127 - 8*i - 7]),
@@ -44,7 +44,7 @@ module mac1(
 
     genvar k;
     generate
-        for(k=0; k<7; k=k+1) begin
+        for(k=0; k<=7; k=k+1) begin
             adder addermac(
                 .a(p[255 - 16*2*k : 255 - 16*2*k - 15]),
                 .b(p[255 - 16*(2*k + 1) : 255 - 16*(2*k + 1) - 15]),

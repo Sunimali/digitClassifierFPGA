@@ -22,7 +22,7 @@
 
 module test_mac1();
 
-parameter half_cycle = 10;
+parameter half_cycle = 20;
 reg [127:0] data_p[39:0];
 reg [127:0] data_w[39:0];
 wire [19:0] s;

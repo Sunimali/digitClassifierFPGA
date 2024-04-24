@@ -2,6 +2,10 @@
 2020.2
 Oct 14 2022
 05:20:55
-C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.sim/sim_1/impl/timing/xsim/test_mult2_time_impl.v,1713291211,verilog,,C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_mult2.v,,glbl;mult,,,,,,,,
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.sim/sim_1/impl/timing/xsim/test_acc_ctrl_time_impl.v,1713895058,verilog,,C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_acc_ctrl.v,,acc_ctrl;glbl,,,,,,,,
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_acc.v,1713476073,verilog,,,,test_acc,,,,,,,,
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_acc_ctrl.v,1713894288,verilog,,,,test_acc_ctrl,,,,,,,,
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_mac1.v,1713468818,verilog,,,,test_mac1,,,,,,,,
+C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_mac3_acc.v,1713758898,verilog,,,,test_mac3_acc,,,,,,,,
 C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_mult.v,1712796762,verilog,,,,test_mult,,,,,,,,
 C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_mult2.v,1713290674,verilog,,,,test_mult2,,,,,,,,

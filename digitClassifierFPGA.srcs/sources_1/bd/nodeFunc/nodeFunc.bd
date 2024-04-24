@@ -1,0 +1,204 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD7FA27F92C97EBBD",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../digitClassifierFPGA.gen/sources_1/bd/nodeFunc",
+      "name": "nodeFunc",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Sigmoid_func_wrapper_0": "",
+      "acc_mac3_wrapper_0": ""
+    },
+    "ports": {
+      "data": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "b": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "nodeFunc_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "pixels": {
+        "direction": "I",
+        "left": "127",
+        "right": "0"
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "weights": {
+        "direction": "I",
+        "left": "127",
+        "right": "0"
+      }
+    },
+    "components": {
+      "Sigmoid_func_wrapper_0": {
+        "vlnv": "xilinx.com:module_ref:Sigmoid_func_wrapper:1.0",
+        "xci_name": "nodeFunc_Sigmoid_func_wrapper_0_0",
+        "xci_path": "ip\\nodeFunc_Sigmoid_func_wrapper_0_0\\nodeFunc_Sigmoid_func_wrapper_0_0.xci",
+        "inst_hier_path": "Sigmoid_func_wrapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Sigmoid_func_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "21",
+            "right": "0"
+          }
+        }
+      },
+      "acc_mac3_wrapper_0": {
+        "vlnv": "xilinx.com:module_ref:acc_mac3_wrapper:1.0",
+        "xci_name": "nodeFunc_acc_mac3_wrapper_0_0",
+        "xci_path": "ip\\nodeFunc_acc_mac3_wrapper_0_0\\nodeFunc_acc_mac3_wrapper_0_0.xci",
+        "inst_hier_path": "acc_mac3_wrapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "acc_mac3_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "b": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "nodeFunc_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "dout": {
+            "direction": "O",
+            "left": "21",
+            "right": "0"
+          },
+          "pixels": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "weights": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Sigmoid_func_wrapper_0_data": {
+        "ports": [
+          "Sigmoid_func_wrapper_0/data",
+          "data"
+        ]
+      },
+      "acc_mac3_wrapper_0_dout": {
+        "ports": [
+          "acc_mac3_wrapper_0/dout",
+          "Sigmoid_func_wrapper_0/y"
+        ]
+      },
+      "b_0_1": {
+        "ports": [
+          "b",
+          "acc_mac3_wrapper_0/b"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "acc_mac3_wrapper_0/clk"
+        ]
+      },
+      "pixels_0_1": {
+        "ports": [
+          "pixels",
+          "acc_mac3_wrapper_0/pixels"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst",
+          "acc_mac3_wrapper_0/rst"
+        ]
+      },
+      "weights_0_1": {
+        "ports": [
+          "weights",
+          "acc_mac3_wrapper_0/weights"
+        ]
+      }
+    }
+  }
+}

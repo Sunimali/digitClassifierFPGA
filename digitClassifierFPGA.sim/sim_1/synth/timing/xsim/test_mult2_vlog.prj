@@ -1,7 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  \
-"test_mult2_time_synth.v" \
-"../../../../../digitClassifierFPGA.srcs/sim_1/new/test_mult2.v" \
-
-# Do not sort compile order
-nosort

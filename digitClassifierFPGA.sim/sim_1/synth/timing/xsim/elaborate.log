@@ -1,26 +1,54 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot test_mult2_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.test_mult2 xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot test_mac3_acc_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.test_mac3_acc xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
-INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "test_mult2_time_synth.sdf", for root module "test_mult2/mult1".
-INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "test_mult2_time_synth.sdf", for root module "test_mult2/mult1".
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "test_mac3_acc_time_synth.sdf", for root module "test_mac3_acc/mac3_acc_uut".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "test_mac3_acc_time_synth.sdf", for root module "test_mac3_acc/mac3_acc_uut".
 Time Resolution for simulation is 1ps
-Compiling module simprims_ver.IBUF
-Compiling module simprims_ver.OBUF
-Compiling module simprims_ver.CARRY4
-Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.FDRE_default
 Compiling module simprims_ver.x_lut3_mux8
 Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.acc_mac3_acc_0_0_adder22
+Compiling module simprims_ver.FDSE_default
 Compiling module simprims_ver.LUT4
+Compiling module xil_defaultlib.acc_mac3_acc_0_0_acc_ctrl
+Compiling module xil_defaultlib.acc_mac3_acc_0_0_acc
+Compiling module xil_defaultlib.acc_mac3_acc_0_0
 Compiling module simprims_ver.x_lut2_mux4
 Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_adder19
+Compiling module simprims_ver.LUT6
 Compiling module simprims_ver.LUT5
-Compiling module xil_defaultlib.mult
-Compiling module xil_defaultlib.test_mult2
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_0
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_1
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_2
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_3
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_4
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_5
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_6
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_7
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_8
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_9
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_10
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_11
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_12
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_13
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mult_14
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0_mac3
+Compiling module xil_defaultlib.acc_mac3_mac3_0_0
+Compiling module xil_defaultlib.acc_mac3
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.acc_mac3_wrapper
+Compiling module xil_defaultlib.test_mac3_acc
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot test_mult2_time_synth
+Built simulation snapshot test_mac3_acc_time_synth

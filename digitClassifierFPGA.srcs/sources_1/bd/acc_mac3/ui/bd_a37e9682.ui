@@ -1,0 +1,27 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.24707",
+   "Default View_TopLeft":"-140,-102",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace port port-id_rst -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace portBus pixels -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace portBus weights -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace portBus b -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace portBus dout -pg 1 -lvl 3 -x 600 -y 140 -defaultsOSRD
+preplace inst mac3_0 -pg 1 -lvl 1 -x 170 -y 90 -defaultsOSRD
+preplace inst acc_0 -pg 1 -lvl 2 -x 460 -y 140 -defaultsOSRD
+preplace netloc acc_0_dout 1 2 1 NJ 140
+preplace netloc b_0_1 1 0 2 NJ 170 NJ
+preplace netloc clk_1 1 0 2 20 10 330J
+preplace netloc pixelsIN_0_1 1 0 1 20J 80n
+preplace netloc rst_0_1 1 0 2 NJ 200 330J
+preplace netloc sumOUT 1 1 1 320 90n
+preplace netloc weightsIN_0_1 1 0 1 NJ 110
+levelinfo -pg 1 0 170 460 600
+pagesize -pg 1 -db -bbox -sgen -140 0 720 230
+"
+}
+0

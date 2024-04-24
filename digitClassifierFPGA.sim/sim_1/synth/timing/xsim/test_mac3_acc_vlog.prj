@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"test_mac3_acc_time_synth.v" \
+"../../../../../digitClassifierFPGA.srcs/sim_1/new/test_mac3_acc.v" \
+
+# Do not sort compile order
+nosort
