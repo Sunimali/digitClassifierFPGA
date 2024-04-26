@@ -19,42 +19,17 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/
 INFO: [VRFC 10-311] analyzing module Sigmoid_func
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.gen/sources_1/bd/Sigmoid_func/hdl/Sigmoid_func_wrapper.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Sigmoid_func_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/adder17.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module adder17
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/adder18.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module adder18
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/adder19.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module adder19
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/mult.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mult
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/mac3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mac3
-WARNING: [VRFC 10-9336] redeclaration of ANSI port 'sumOUT' is not allowed [C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/mac3.v:39]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/acc_ctrl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module acc_ctrl
-WARNING: [VRFC 10-9336] redeclaration of ANSI port 'state' is not allowed [C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/acc_ctrl.v:36]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/adder22.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module adder22
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/acc.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module acc
-WARNING: [VRFC 10-9336] redeclaration of ANSI port 'dout' is not allowed [C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/acc.v:31]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.ip_user_files/bd/acc_mac3/ip/acc_mac3_mac3_0_0/sim/acc_mac3_mac3_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module acc_mac3_mac3_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.ip_user_files/bd/acc_mac3/ip/acc_mac3_acc_0_0/sim/acc_mac3_acc_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module acc_mac3_acc_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.ip_user_files/bd/acc_mac3/sim/acc_mac3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module acc_mac3
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.gen/sources_1/bd/acc_mac3/hdl/acc_mac3_wrapper.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module acc_mac3_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.ip_user_files/bd/nodeFunc/ip/nodeFunc_Sigmoid_func_wrapper_0_0/sim/nodeFunc_Sigmoid_func_wrapper_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module nodeFunc_Sigmoid_func_wrapper_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.ip_user_files/bd/nodeFunc/ip/nodeFunc_acc_mac3_wrapper_0_0/sim/nodeFunc_acc_mac3_wrapper_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module nodeFunc_acc_mac3_wrapper_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.ip_user_files/bd/nodeFunc/sim/nodeFunc.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module nodeFunc
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.gen/sources_1/bd/nodeFunc/hdl/nodeFunc_wrapper.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module nodeFunc_wrapper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_node_func.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module test_node_func
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sources_1/new/sign_extender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_extender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.ip_user_files/bd/output_node_func/ip/output_node_func_mac3_0_0/sim/output_node_func_mac3_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_node_func_mac3_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.ip_user_files/bd/output_node_func/ip/output_node_func_Sigmoid_func_wrapper_0_0/sim/output_node_func_Sigmoid_func_wrapper_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_node_func_Sigmoid_func_wrapper_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.ip_user_files/bd/output_node_func/ip/output_node_func_sign_extender_0_0/sim/output_node_func_sign_extender_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_node_func_sign_extender_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.ip_user_files/bd/output_node_func/sim/output_node_func.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_node_func
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.gen/sources_1/bd/output_node_func/hdl/output_node_func_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_node_func_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunim/digitClassifierFPGA/digitClassifierFPGA.srcs/sim_1/new/test_output_node_func.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_output_node_func

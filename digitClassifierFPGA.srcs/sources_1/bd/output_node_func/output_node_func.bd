@@ -1,0 +1,186 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x829418324476F4C1",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../digitClassifierFPGA.gen/sources_1/bd/output_node_func",
+      "name": "output_node_func",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "mac3_0": "",
+      "Sigmoid_func_wrapper_0": "",
+      "sign_extender_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "output_node_func_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "pixelsIN": {
+        "direction": "I",
+        "left": "127",
+        "right": "0"
+      },
+      "weightsIN": {
+        "direction": "I",
+        "left": "127",
+        "right": "0"
+      },
+      "data": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "mac3_0": {
+        "vlnv": "xilinx.com:module_ref:mac3:1.0",
+        "xci_name": "output_node_func_mac3_0_0",
+        "xci_path": "ip\\output_node_func_mac3_0_0\\output_node_func_mac3_0_0.xci",
+        "inst_hier_path": "mac3_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mac3",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "output_node_func_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "pixelsIN": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          },
+          "weightsIN": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          },
+          "sumOUT": {
+            "direction": "O",
+            "left": "19",
+            "right": "0"
+          }
+        }
+      },
+      "Sigmoid_func_wrapper_0": {
+        "vlnv": "xilinx.com:module_ref:Sigmoid_func_wrapper:1.0",
+        "xci_name": "output_node_func_Sigmoid_func_wrapper_0_0",
+        "xci_path": "ip\\output_node_func_Sigmoid_func_wrapper_0_0\\output_node_func_Sigmoid_func_wrapper_0_0.xci",
+        "inst_hier_path": "Sigmoid_func_wrapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Sigmoid_func_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "21",
+            "right": "0"
+          }
+        }
+      },
+      "sign_extender_0": {
+        "vlnv": "xilinx.com:module_ref:sign_extender:1.0",
+        "xci_name": "output_node_func_sign_extender_0_0",
+        "xci_path": "ip\\output_node_func_sign_extender_0_0\\output_node_func_sign_extender_0_0.xci",
+        "inst_hier_path": "sign_extender_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sign_extender",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in": {
+            "direction": "I",
+            "left": "19",
+            "right": "0"
+          },
+          "out": {
+            "direction": "O",
+            "left": "21",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Sigmoid_func_wrapper_0_data": {
+        "ports": [
+          "Sigmoid_func_wrapper_0/data",
+          "data"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "mac3_0/clk"
+        ]
+      },
+      "mac3_0_sumOUT": {
+        "ports": [
+          "mac3_0/sumOUT",
+          "sign_extender_0/in"
+        ]
+      },
+      "pixelsIN_0_1": {
+        "ports": [
+          "pixelsIN",
+          "mac3_0/pixelsIN"
+        ]
+      },
+      "sign_extender_0_out": {
+        "ports": [
+          "sign_extender_0/out",
+          "Sigmoid_func_wrapper_0/y"
+        ]
+      },
+      "weightsIN": {
+        "ports": [
+          "weightsIN",
+          "mac3_0/weightsIN"
+        ]
+      }
+    }
+  }
+}
