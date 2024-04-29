@@ -1,0 +1,522 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xACBB182A001FAB0B",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../digitClassifierFPGA.gen/sources_1/bd/top_shallow",
+      "name": "top_shallow",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Sigmoid_func_wrapper_0": "",
+      "mac3_0": "",
+      "acc_0": "",
+      "mac3_1": "",
+      "Sigmoid_func_wrapper_1": "",
+      "sign_extender_0": "",
+      "controller_0": "",
+      "hiddden_node_register_0": "",
+      "output_node_reg_0": ""
+    },
+    "ports": {
+      "valid": {
+        "direction": "O"
+      },
+      "outclass": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "top_shallow_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "b": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "pixelsIN": {
+        "direction": "I",
+        "left": "127",
+        "right": "0"
+      },
+      "weightsIN": {
+        "direction": "I",
+        "left": "127",
+        "right": "0"
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "Sigmoid_func_wrapper_0": {
+        "vlnv": "xilinx.com:module_ref:Sigmoid_func_wrapper:1.0",
+        "xci_name": "top_shallow_Sigmoid_func_wrapper_0_0",
+        "xci_path": "ip\\top_shallow_Sigmoid_func_wrapper_0_0\\top_shallow_Sigmoid_func_wrapper_0_0.xci",
+        "inst_hier_path": "Sigmoid_func_wrapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Sigmoid_func_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "21",
+            "right": "0"
+          }
+        }
+      },
+      "mac3_0": {
+        "vlnv": "xilinx.com:module_ref:mac3:1.0",
+        "xci_name": "top_shallow_mac3_0_0",
+        "xci_path": "ip\\top_shallow_mac3_0_0\\top_shallow_mac3_0_0.xci",
+        "inst_hier_path": "mac3_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mac3",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "top_shallow_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "pixelsIN": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          },
+          "weightsIN": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          },
+          "sumOUT": {
+            "direction": "O",
+            "left": "19",
+            "right": "0"
+          }
+        }
+      },
+      "acc_0": {
+        "vlnv": "xilinx.com:module_ref:acc:1.0",
+        "xci_name": "top_shallow_acc_0_0",
+        "xci_path": "ip\\top_shallow_acc_0_0\\top_shallow_acc_0_0.xci",
+        "inst_hier_path": "acc_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "acc",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "top_shallow_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "din": {
+            "direction": "I",
+            "left": "19",
+            "right": "0"
+          },
+          "b": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "21",
+            "right": "0"
+          }
+        }
+      },
+      "mac3_1": {
+        "vlnv": "xilinx.com:module_ref:mac3:1.0",
+        "xci_name": "top_shallow_mac3_1_0",
+        "xci_path": "ip\\top_shallow_mac3_1_0\\top_shallow_mac3_1_0.xci",
+        "inst_hier_path": "mac3_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mac3",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "top_shallow_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "pixelsIN": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          },
+          "weightsIN": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          },
+          "sumOUT": {
+            "direction": "O",
+            "left": "19",
+            "right": "0"
+          }
+        }
+      },
+      "Sigmoid_func_wrapper_1": {
+        "vlnv": "xilinx.com:module_ref:Sigmoid_func_wrapper:1.0",
+        "xci_name": "top_shallow_Sigmoid_func_wrapper_1_0",
+        "xci_path": "ip\\top_shallow_Sigmoid_func_wrapper_1_0\\top_shallow_Sigmoid_func_wrapper_1_0.xci",
+        "inst_hier_path": "Sigmoid_func_wrapper_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Sigmoid_func_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "21",
+            "right": "0"
+          }
+        }
+      },
+      "sign_extender_0": {
+        "vlnv": "xilinx.com:module_ref:sign_extender:1.0",
+        "xci_name": "top_shallow_sign_extender_0_0",
+        "xci_path": "ip\\top_shallow_sign_extender_0_0\\top_shallow_sign_extender_0_0.xci",
+        "inst_hier_path": "sign_extender_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sign_extender",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in": {
+            "direction": "I",
+            "left": "19",
+            "right": "0"
+          },
+          "out": {
+            "direction": "O",
+            "left": "21",
+            "right": "0"
+          }
+        }
+      },
+      "controller_0": {
+        "vlnv": "xilinx.com:module_ref:controller:1.0",
+        "xci_name": "top_shallow_controller_0_0",
+        "xci_path": "ip\\top_shallow_controller_0_0\\top_shallow_controller_0_0.xci",
+        "inst_hier_path": "controller_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "top_shallow_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "out_valid": {
+            "direction": "O"
+          },
+          "hidden_reg_shift": {
+            "direction": "O"
+          },
+          "out_reg_shift": {
+            "direction": "O"
+          }
+        }
+      },
+      "hiddden_node_register_0": {
+        "vlnv": "xilinx.com:module_ref:hiddden_node_register:1.0",
+        "xci_name": "top_shallow_hiddden_node_register_0_0",
+        "xci_path": "ip\\top_shallow_hiddden_node_register_0_0\\top_shallow_hiddden_node_register_0_0.xci",
+        "inst_hier_path": "hiddden_node_register_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "hiddden_node_register",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "top_shallow_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "shift": {
+            "direction": "I"
+          },
+          "hiddenNodeDataIn": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "127",
+            "right": "0"
+          }
+        }
+      },
+      "output_node_reg_0": {
+        "vlnv": "xilinx.com:module_ref:output_node_reg:1.0",
+        "xci_name": "top_shallow_output_node_reg_0_0",
+        "xci_path": "ip\\top_shallow_output_node_reg_0_0\\top_shallow_output_node_reg_0_0.xci",
+        "inst_hier_path": "output_node_reg_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "output_node_reg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "top_shallow_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "shift": {
+            "direction": "I"
+          },
+          "outputNodeDataIn": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "outclass": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Sigmoid_func_wrapper_0_data": {
+        "ports": [
+          "Sigmoid_func_wrapper_0/data",
+          "hiddden_node_register_0/hiddenNodeDataIn"
+        ]
+      },
+      "Sigmoid_func_wrapper_1_data": {
+        "ports": [
+          "Sigmoid_func_wrapper_1/data",
+          "output_node_reg_0/outputNodeDataIn"
+        ]
+      },
+      "acc_0_dout": {
+        "ports": [
+          "acc_0/dout",
+          "Sigmoid_func_wrapper_0/y"
+        ]
+      },
+      "b_0_1": {
+        "ports": [
+          "b",
+          "acc_0/b"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "mac3_0/clk",
+          "acc_0/clk",
+          "mac3_1/clk",
+          "controller_0/clk",
+          "hiddden_node_register_0/clk",
+          "output_node_reg_0/clk"
+        ]
+      },
+      "controller_0_hidden_reg_shift": {
+        "ports": [
+          "controller_0/hidden_reg_shift",
+          "hiddden_node_register_0/shift"
+        ]
+      },
+      "controller_0_out_reg_shift": {
+        "ports": [
+          "controller_0/out_reg_shift",
+          "output_node_reg_0/shift"
+        ]
+      },
+      "controller_0_out_valid": {
+        "ports": [
+          "controller_0/out_valid",
+          "valid"
+        ]
+      },
+      "hiddden_node_register_0_dout": {
+        "ports": [
+          "hiddden_node_register_0/dout",
+          "mac3_1/pixelsIN"
+        ]
+      },
+      "mac3_0_sumOUT": {
+        "ports": [
+          "mac3_0/sumOUT",
+          "acc_0/din"
+        ]
+      },
+      "mac3_1_sumOUT": {
+        "ports": [
+          "mac3_1/sumOUT",
+          "sign_extender_0/in"
+        ]
+      },
+      "output_node_reg_0_outclass": {
+        "ports": [
+          "output_node_reg_0/outclass",
+          "outclass"
+        ]
+      },
+      "pixelsIN_0_1": {
+        "ports": [
+          "pixelsIN",
+          "mac3_0/pixelsIN"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst",
+          "acc_0/rst",
+          "controller_0/rst",
+          "hiddden_node_register_0/rst",
+          "output_node_reg_0/rst"
+        ]
+      },
+      "sign_extender_0_out": {
+        "ports": [
+          "sign_extender_0/out",
+          "Sigmoid_func_wrapper_1/y"
+        ]
+      },
+      "weightsIN_0_1": {
+        "ports": [
+          "weightsIN",
+          "mac3_0/weightsIN",
+          "mac3_1/weightsIN"
+        ]
+      }
+    }
+  }
+}

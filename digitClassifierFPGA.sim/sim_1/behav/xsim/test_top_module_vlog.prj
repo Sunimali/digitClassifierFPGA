@@ -1,0 +1,48 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../digitClassifierFPGA.srcs/sources_1/new/sigmoid_interface.v" \
+
+verilog dist_mem_gen_v8_0_10  \
+"../../../../digitClassifierFPGA.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v" \
+
+verilog xil_defaultlib  \
+"../../../../digitClassifierFPGA.ip_user_files/bd/Sigmoid_func/ipshared/10c3/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/Sigmoid_func/ipshared/10c3/sources_1/new/saturationLogic.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/Sigmoid_func/ipshared/10c3/sources_1/new/dataConv.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/Sigmoid_func/ipshared/10c3/sources_1/new/addrConv.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/Sigmoid_func/ipshared/10c3/sources_1/new/sigmoid.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/Sigmoid_func/ip/Sigmoid_func_sigmoid_0_0/sim/Sigmoid_func_sigmoid_0_0.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/Sigmoid_func/ip/Sigmoid_func_sigmoid_interface_0_0/sim/Sigmoid_func_sigmoid_interface_0_0.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/Sigmoid_func/sim/Sigmoid_func.v" \
+"../../../../digitClassifierFPGA.gen/sources_1/bd/Sigmoid_func/hdl/Sigmoid_func_wrapper.v" \
+"../../../../digitClassifierFPGA.srcs/sources_1/new/adder.v" \
+"../../../../digitClassifierFPGA.srcs/sources_1/new/adder17.v" \
+"../../../../digitClassifierFPGA.srcs/sources_1/new/adder18.v" \
+"../../../../digitClassifierFPGA.srcs/sources_1/new/adder19.v" \
+"../../../../digitClassifierFPGA.srcs/sources_1/new/mult.v" \
+"../../../../digitClassifierFPGA.srcs/sources_1/new/mac3.v" \
+"../../../../digitClassifierFPGA.srcs/sources_1/new/acc_ctrl.v" \
+"../../../../digitClassifierFPGA.srcs/sources_1/new/adder22.v" \
+"../../../../digitClassifierFPGA.srcs/sources_1/new/acc.v" \
+"../../../../digitClassifierFPGA.srcs/sources_1/new/sign_extender.v" \
+"../../../../digitClassifierFPGA.srcs/sources_1/new/controller.v" \
+"../../../../digitClassifierFPGA.srcs/sources_1/new/hiddden_node_register.v" \
+"../../../../digitClassifierFPGA.srcs/sources_1/new/output_node_reg.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/top_shallow/ip/top_shallow_Sigmoid_func_wrapper_0_0/sim/top_shallow_Sigmoid_func_wrapper_0_0.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/top_shallow/ip/top_shallow_mac3_0_0/sim/top_shallow_mac3_0_0.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/top_shallow/ip/top_shallow_acc_0_0/sim/top_shallow_acc_0_0.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/top_shallow/ip/top_shallow_mac3_1_0/sim/top_shallow_mac3_1_0.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/top_shallow/ip/top_shallow_Sigmoid_func_wrapper_1_0/sim/top_shallow_Sigmoid_func_wrapper_1_0.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/top_shallow/ip/top_shallow_sign_extender_0_0/sim/top_shallow_sign_extender_0_0.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/top_shallow/ip/top_shallow_controller_0_0/sim/top_shallow_controller_0_0.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/top_shallow/ip/top_shallow_hiddden_node_register_0_0/sim/top_shallow_hiddden_node_register_0_0.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/top_shallow/ip/top_shallow_output_node_reg_0_0/sim/top_shallow_output_node_reg_0_0.v" \
+"../../../../digitClassifierFPGA.ip_user_files/bd/top_shallow/sim/top_shallow.v" \
+"../../../../digitClassifierFPGA.gen/sources_1/bd/top_shallow/hdl/top_shallow_wrapper.v" \
+"../../../../digitClassifierFPGA.srcs/sim_1/new/test_top_module.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

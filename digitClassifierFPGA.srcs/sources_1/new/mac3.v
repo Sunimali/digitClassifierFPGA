@@ -25,7 +25,7 @@ module mac3(
     input clk,
     input [127:0] pixelsIN,
     input [127:0] weightsIN,
-    output [19:0] sumOUT
+    output reg [19:0] sumOUT
     );
 
     wire [255:0] p;
@@ -36,7 +36,6 @@ module mac3(
 
     reg [255:0] pr;
     reg [127:0] pixels, weights;
-    reg [19:0] sumOUT;
 
     always @(posedge clk) begin
         pixels <= pixelsIN;

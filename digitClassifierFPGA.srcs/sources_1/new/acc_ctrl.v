@@ -25,7 +25,7 @@ module acc_ctrl(
     input rst,
     output sel,
     output en,
-    output [1:0] state
+    output reg [1:0] state
     );
 
     parameter s1 = 2'b00;
@@ -33,7 +33,7 @@ module acc_ctrl(
     parameter s3 = 2'b10;
     parameter s4 = 2'b11;
 
-    reg [1:0] state, next_state;
+    reg [1:0] next_state;
 
     always @(posedge clk) begin
         if(rst) begin

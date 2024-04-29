@@ -21,29 +21,19 @@
 
 
 module hiddden_node_register(
-    input clk,
-    input rst,
+    input clk, rst, shift,
     input [7:0]hiddenNodeDataIn,
-    output reg [95:0]dout
-    );
-
-    reg [5:0] counter;
-
+    output reg [127:0] dout
+);
+    
     always @(posedge clk) begin
         if(rst) begin
-            counter <= 0;
             dout <= 0;
+        end else if (shift) begin
+            dout <= dout << 8;
+            dout[7:0] <= hiddenNodeDataIn;
+        end else begin
+            dout <= dout;
         end
-        else begin
-            counter <= counter + 1;
-            if(counter < 49 & ~|counter[1:0]) begin
-                dout <= dout << 8;
-                dout[7:0] <= hiddenNodeDataIn;
-            end
-        end
-        
-    
     end
-
-
 endmodule

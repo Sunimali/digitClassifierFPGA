@@ -1,0 +1,275 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE94632A19C76546B",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../digitClassifierFPGA.gen/sources_1/bd/top_module",
+      "name": "top_module",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2"
+    },
+    "design_tree": {
+      "nodeFunc_0": "",
+      "output_node_func_0": "",
+      "controller_0": "",
+      "hiddden_node_register_0": "",
+      "output_node_reg_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I"
+      },
+      "weights": {
+        "direction": "I",
+        "left": "127",
+        "right": "0"
+      },
+      "weightsOUT": {
+        "direction": "I",
+        "left": "127",
+        "right": "0"
+      },
+      "valid": {
+        "direction": "O"
+      },
+      "outclass": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "b": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "pixels": {
+        "direction": "I",
+        "left": "127",
+        "right": "0"
+      }
+    },
+    "components": {
+      "nodeFunc_0": {
+        "vlnv": "xilinx.com:user:nodeFunc:1.0",
+        "xci_name": "top_module_nodeFunc_0_2",
+        "xci_path": "ip\\top_module_nodeFunc_0_2\\top_module_nodeFunc_0_2.xci",
+        "inst_hier_path": "nodeFunc_0"
+      },
+      "output_node_func_0": {
+        "vlnv": "xilinx.com:user:output_node_func:1.0",
+        "xci_name": "top_module_output_node_func_0_2",
+        "xci_path": "ip\\top_module_output_node_func_0_2\\top_module_output_node_func_0_2.xci",
+        "inst_hier_path": "output_node_func_0"
+      },
+      "controller_0": {
+        "vlnv": "xilinx.com:module_ref:controller:1.0",
+        "xci_name": "top_module_controller_0_0",
+        "xci_path": "ip\\top_module_controller_0_0\\top_module_controller_0_0.xci",
+        "inst_hier_path": "controller_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "out_valid": {
+            "direction": "O"
+          },
+          "hidden_reg_shift": {
+            "direction": "O"
+          },
+          "out_reg_shift": {
+            "direction": "O"
+          }
+        }
+      },
+      "hiddden_node_register_0": {
+        "vlnv": "xilinx.com:module_ref:hiddden_node_register:1.0",
+        "xci_name": "top_module_hiddden_node_register_0_0",
+        "xci_path": "ip\\top_module_hiddden_node_register_0_0\\top_module_hiddden_node_register_0_0.xci",
+        "inst_hier_path": "hiddden_node_register_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "hiddden_node_register",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "shift": {
+            "direction": "I"
+          },
+          "hiddenNodeDataIn": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "127",
+            "right": "0"
+          }
+        }
+      },
+      "output_node_reg_0": {
+        "vlnv": "xilinx.com:module_ref:output_node_reg:1.0",
+        "xci_name": "top_module_output_node_reg_0_2",
+        "xci_path": "ip\\top_module_output_node_reg_0_2\\top_module_output_node_reg_0_2.xci",
+        "inst_hier_path": "output_node_reg_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "output_node_reg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "shift": {
+            "direction": "I"
+          },
+          "outputNodeDataIn": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "outclass": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "b_1": {
+        "ports": [
+          "b",
+          "nodeFunc_0/b"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "nodeFunc_0/clk",
+          "output_node_func_0/clk",
+          "controller_0/clk",
+          "hiddden_node_register_0/clk",
+          "output_node_reg_0/clk"
+        ]
+      },
+      "controller_0_hidden_reg_shift": {
+        "ports": [
+          "controller_0/hidden_reg_shift",
+          "hiddden_node_register_0/shift"
+        ]
+      },
+      "controller_0_out_reg_shift": {
+        "ports": [
+          "controller_0/out_reg_shift",
+          "output_node_reg_0/shift"
+        ]
+      },
+      "controller_0_out_valid": {
+        "ports": [
+          "controller_0/out_valid",
+          "valid"
+        ]
+      },
+      "hiddden_node_register_0_dout": {
+        "ports": [
+          "hiddden_node_register_0/dout",
+          "output_node_func_0/pixelsIN"
+        ]
+      },
+      "nodeFunc_0_data": {
+        "ports": [
+          "nodeFunc_0/data",
+          "hiddden_node_register_0/hiddenNodeDataIn"
+        ]
+      },
+      "output_node_func_0_data": {
+        "ports": [
+          "output_node_func_0/data",
+          "output_node_reg_0/outputNodeDataIn"
+        ]
+      },
+      "output_node_reg_0_outclass": {
+        "ports": [
+          "output_node_reg_0/outclass",
+          "outclass"
+        ]
+      },
+      "pixels_1": {
+        "ports": [
+          "pixels",
+          "nodeFunc_0/pixels"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst",
+          "nodeFunc_0/rst",
+          "controller_0/rst",
+          "hiddden_node_register_0/rst",
+          "output_node_reg_0/rst"
+        ]
+      },
+      "weightsOUT_1": {
+        "ports": [
+          "weightsOUT",
+          "output_node_func_0/weightsIN"
+        ]
+      },
+      "weights_1": {
+        "ports": [
+          "weights",
+          "nodeFunc_0/weights"
+        ]
+      }
+    }
+  }
+}

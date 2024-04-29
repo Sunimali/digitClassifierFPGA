@@ -7,12 +7,11 @@
       "name": "acc_mac3",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2022.2",
-      "validated": "true"
+      "tool_version": "2022.2"
     },
     "design_tree": {
-      "mac3_0": "",
-      "acc_0": ""
+      "acc_0": "",
+      "mac3_0": ""
     },
     "ports": {
       "clk": {
@@ -35,17 +34,7 @@
       },
       "rst": {
         "type": "rst",
-        "direction": "I",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "dout": {
         "direction": "O",
@@ -54,38 +43,6 @@
       }
     },
     "components": {
-      "mac3_0": {
-        "vlnv": "xilinx.com:module_ref:mac3:1.0",
-        "xci_name": "acc_mac3_mac3_0_0",
-        "xci_path": "ip\\acc_mac3_mac3_0_0\\acc_mac3_mac3_0_0.xci",
-        "inst_hier_path": "mac3_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "mac3",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I"
-          },
-          "pixelsIN": {
-            "direction": "I",
-            "left": "127",
-            "right": "0"
-          },
-          "weightsIN": {
-            "direction": "I",
-            "left": "127",
-            "right": "0"
-          },
-          "sumOUT": {
-            "direction": "O",
-            "left": "19",
-            "right": "0"
-          }
-        }
-      },
       "acc_0": {
         "vlnv": "xilinx.com:module_ref:acc:1.0",
         "xci_name": "acc_mac3_acc_0_0",
@@ -127,6 +84,38 @@
             "right": "0"
           }
         }
+      },
+      "mac3_0": {
+        "vlnv": "xilinx.com:module_ref:mac3:1.0",
+        "xci_name": "acc_mac3_mac3_0_0",
+        "xci_path": "ip\\acc_mac3_mac3_0_0\\acc_mac3_mac3_0_0.xci",
+        "inst_hier_path": "mac3_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mac3",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "pixelsIN": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          },
+          "weightsIN": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          },
+          "sumOUT": {
+            "direction": "O",
+            "left": "19",
+            "right": "0"
+          }
+        }
       }
     },
     "nets": {
@@ -145,8 +134,8 @@
       "clk_1": {
         "ports": [
           "clk",
-          "mac3_0/clk",
-          "acc_0/clk"
+          "acc_0/clk",
+          "mac3_0/clk"
         ]
       },
       "pixelsIN_0_1": {

@@ -25,10 +25,10 @@ module acc(
     input rst,
     input [19:0] din,
     input [7:0] b,
-    output [21:0] dout
+    output reg [21:0] dout
     );
 
-    reg [21:0] accreg, muxout, dout;
+    reg [21:0] accreg, muxout;
 
     wire sel, en;
     wire [21:0] bext,sum;

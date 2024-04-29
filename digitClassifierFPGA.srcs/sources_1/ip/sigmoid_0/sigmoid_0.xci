@@ -4,7 +4,7 @@
     "xci_name": "sigmoid_0",
     "component_reference": "siu.edu:user:sigmoid:1.0",
     "ip_revision": "2",
-    "gen_directory": "../../../../digitClassifierFPGA.gen/sources_1/ip/sigmoid_0",
+    "gen_directory": "../../../../digitClassifierFPGA.gen/sources_1/ip/sigmoid_0_1",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "sigmoid_0", "resolve_type": "user", "usage": "all" } ]
@@ -28,7 +28,7 @@
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
         "IPREVISION": [ { "value": "2" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../digitClassifierFPGA.gen/sources_1/ip/sigmoid_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../digitClassifierFPGA.gen/sources_1/ip/sigmoid_0_1" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
         "SWVERSION": [ { "value": "2022.2" } ],
